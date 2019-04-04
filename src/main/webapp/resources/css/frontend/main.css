@@ -1,0 +1,127 @@
+/********** MENU.HTML ************/
+@media screen and (max-width: 767px){
+    .sidenav{
+        height: auto;
+        padding: 15px;
+    }
+}
+.logo-navbar {
+    float: left;
+    height: 50px;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.main-header {
+    background: #FFF;
+    height: 65px;
+    clear: both;
+}
+
+.main-header li {
+    vertical-align: top;
+    float: left;
+    width: 33.333%;
+}
+.menu-display {
+    cursor: pointer;
+    height: 65px;
+    width: 120px;
+    background: #FFF;
+    color: #094FA4;
+    font-size: 16px;
+    padding: 25px 20px 0;
+}
+.menu-display:hover, .menu-display.active {
+    background: #EEE;
+}
+.menu-display span {
+    margin-left: 15px;
+}
+.user-content {
+    text-align: right;
+    height: 65px;
+    cursor: pointer;
+    width: 240px;
+    margin-left: auto;
+    padding: 20px 40px 0 20px;
+}
+.user-content:hover, .user-content.active {
+    background: #EEE;
+}
+
+#user-list {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 300px;
+    z-index: 100;
+}
+#user-list li {
+    display: block;
+}
+#user-list li a {
+    background: #FFF;
+    border: 1px solid #F1F1F1;
+    color: #666;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+#user-list li a:hover {
+    background: #009EE5;
+    color: #FFF;
+}
+@media screen and (max-width: 1000px) {
+    .hide-l {
+        display: none;
+    }
+    .main-header li {
+        width: 25%;
+    }
+    .main-header li.logo-header {
+        width: 50%;
+    }
+    #menu-list, #user-list {
+        max-width: 100%;
+    }
+    #menu-list li>.submenu {
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+    #menu-list li a img {
+        transform: rotate(90deg);
+    }
+    .user-content {
+        width: auto;
+        padding: 22px 25px 0 10px;
+    }
+    .user-content img {
+        right: 5px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .tablas-container {
+        overflow-x: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .buscador .form-buscador li {
+        width: 100%;
+    }
+}
+
+.modal-button-disabled{
+    background: #CCCCCC;
+    color: #FFF;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px 20px;
+    font-size: 12px;
+    /* border: 1px solid #00A7E7; */
+    line-height: 0.7;
+}
+
+
+/**************************************/

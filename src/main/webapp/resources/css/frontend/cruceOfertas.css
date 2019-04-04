@@ -1,0 +1,53 @@
+
+/****Estilos Globales****/
+body{
+     background: rgb(252, 249, 242);
+    
+ }
+ p {
+ font-size: small;
+ line-height: 1.8;
+}
+table {
+    font-size: 14px !important;
+}
+/****Estilos Botones****/
+.subir{
+    padding: 6px 12px;
+    background: #3ab370;
+    color:#fff;
+    border:0px solid #fff;
+}
+.subir:hover{
+    color:#fff;
+    background: #094FA4;
+}
+
+/********EFECTOS***********/
+.hover_img a { 
+    position:relative; 
+}
+.hover_img a span {
+    position:absolute;
+    /*display:none; */
+    z-index:99; 
+    visibility: hidden; 
+    opacity: 0;
+    transition: visibility 1s, opacity 1.0s linear;
+}
+.hover_img a:hover span {
+    /*display:block;*/ 
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+#div_negro{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9000;
+    display: none;
+}
+
